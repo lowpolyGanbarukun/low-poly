@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サンプル商品 利用規約｜ローポリで頑張るくん</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap">
+<style>
+:root { --ink:#111110; --sub:#55554E; --rule:#C9C6BE; --hair:#E8E6E0; --cond:#E6E4DE; --paper:#FFFFFF; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink);
+  font-family:'BIZ UDPGothic','Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif; }
+.wrap { max-width:760px; margin:0 auto; padding:44px 20px 80px; }
+a { color:var(--ink); }
+
+.head { padding-bottom:13px; border-bottom:3px solid var(--ink); }
+.head .sub { font-size:11px; letter-spacing:.16em; margin-bottom:7px; }
+.head h1 { font-size:26px; line-height:1.3; margin:0 0 10px; }
+.head .meta { font-size:12px; color:var(--sub); line-height:1.8; }
+.nw { white-space:nowrap; }
+
+h2.sec { font-size:19px; margin:48px 0 16px; padding-bottom:9px; border-bottom:2px solid var(--ink); }
+
+.legend { display:flex; flex-wrap:wrap; gap:7px; margin:0 0 16px; }
+.legend span { border:2px solid var(--ink); padding:2px 12px; font-size:13px; font-weight:700; }
+.legend .c { background:var(--cond); }
+.legend .n { background:var(--ink); color:#fff; }
+
+.grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:11px; }
+.cell { display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding:20px 12px; border:1.5px solid var(--ink); text-align:center; }
+.cell.lead { border-width:2.5px; }
+.cell svg { margin-bottom:14px; }
+.cell .n { font-size:14px; font-weight:700; line-height:1.4; margin-bottom:6px; }
+.cell .v { font-size:34px; font-weight:700; line-height:1; letter-spacing:.04em; }
+.cell .vs { font-size:21px; font-weight:700; line-height:1.15; }
+.cell .s { font-size:11.5px; line-height:1.5; margin-top:8px; }
+.cell.no { background:var(--ink); color:#fff; }
+.cell.cond { background:var(--cond); }
+.cell.link { justify-content:center; gap:10px; }
+.cell.link .t { font-size:13px; font-weight:700; line-height:1.5; }
+
+.rel .chip { display:inline-block; border:2px solid var(--ink); padding:4px 15px; font-size:18px; font-weight:700; }
+.rel .ok { border:2.5px solid var(--ink); padding:20px 22px; }
+.rel .ng { background:var(--ink); color:#fff; padding:20px 22px; margin-top:14px; }
+.rel .ng .chip { border-color:#fff; }
+.rel .cols { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 34px; margin-top:14px; }
+.rel .li { font-size:15px; line-height:1.55; padding:8px 0; }
+.rel .tail { margin-top:14px; padding-top:13px; border-top:1px solid var(--rule); font-size:13.5px; line-height:1.7; }
+.rel .ng .tail { border-top-color:#55554E; }
+.rel .disc { border:1.5px solid var(--ink); padding:17px 22px; margin-top:14px; font-size:13.5px; line-height:1.8; }
+
+.art { margin:0 0 30px; }
+.art h3 { font-size:16px; font-weight:700; line-height:1.6; margin:0 0 10px; }
+.art ol { margin:0; padding-left:1.7em; font-size:14.5px; line-height:1.85; }
+.art ol > li { margin-bottom:7px; }
+.art ol ol { margin:5px 0 0; padding-left:1.5em; }
+.art ol ol > li { margin-bottom:2px; }
+.art p { font-size:14.5px; line-height:1.85; margin:0 0 8px; }
+.req { color:var(--sub); }
+
+footer { margin-top:56px; padding-top:18px; border-top:1px solid var(--ink); font-size:12.5px; color:var(--sub); line-height:1.8; }
+
+@media (max-width:620px) {
+  .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .rel .cols { grid-template-columns:1fr; gap:0; }
+  .head h1 { font-size:22px; }
+}
+@media (max-width:400px) {
+  .grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <div class="sub">ローポリで頑張るくん</div>
+    <h1>サンプル商品　利用規約</h1>
+    <div class="meta">
+      <span class="nw">規約 Version 1.00</span>　／　<span class="nw">2026年10月3日 制定</span>　／　<span class="nw">改定日 ―</span><br>
+      本規約の正本は日本語版です。
+    </div>
+  </div>
+
+  <h2 class="sec">できること・できないこと</h2>
+
+  <div class="legend">
+    <span>OK</span><span class="c">条件つき</span><span class="n">NG</span>
+  </div>
+
+  <div class="grid">
+    <div class="cell lead">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48" aria-hidden="true"><path d="M9.24264 18.9967H21V20.9967H3V16.754L12.8995 6.85453L17.1421 11.0972L9.24264 18.9967ZM14.3137 5.44032L16.435 3.319C16.8256 2.92848 17.4587 2.92848 17.8492 3.319L20.6777 6.14743C21.0682 6.53795 21.0682 7.17112 20.6777 7.56164L18.5563 9.68296L14.3137 5.44032Z"/></svg>
+      <div class="n">改変</div><div class="v">OK</div>
+    </div>
+    <div class="cell lead">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48" aria-hidden="true"><path d="M12.0049 22.0027C6.48204 22.0027 2.00488 17.5256 2.00488 12.0027C2.00488 6.4799 6.48204 2.00275 12.0049 2.00275C17.5277 2.00275 22.0049 6.4799 22.0049 12.0027C22.0049 17.5256 17.5277 22.0027 12.0049 22.0027ZM13.0049 13.0027V12.0027H16.0049V10.0027H13.4191L15.5404 7.88143L14.1262 6.46721L12.0049 8.58853L9.88356 6.46721L8.46935 7.88143L10.5907 10.0027H8.00488V12.0027H11.0049V13.0027H8.00488V15.0027H11.0049V17.0027H13.0049V15.0027H16.0049V13.0027H13.0049Z"/></svg>
+      <div class="n">商用利用</div><div class="v">OK</div>
+    </div>
+    <div class="cell lead no">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48" aria-hidden="true"><path d="M13 14H11C7.54202 14 4.53953 15.9502 3.03239 18.8107C3.01093 18.5433 3 18.2729 3 18C3 12.4772 7.47715 8 13 8V3L23 11L13 19V14Z"/></svg>
+      <div class="n">データを人に渡す</div><div class="v">NG</div>
+    </div>
+
+    <div class="cell">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40" aria-hidden="true"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM16.0043 12.8777C15.6589 12.3533 15.4097 11.9746 14.4622 12.1248C12.6717 12.409 12.4732 12.7224 12.3877 13.2375L12.3636 13.3943L12.3393 13.5597C12.2416 14.2428 12.2453 14.5012 12.5589 14.8308C13.8241 16.1582 14.582 17.115 14.8116 17.6746C14.9237 17.9484 15.2119 18.7751 15.0136 19.5927C16.2372 19.1066 17.3156 18.3332 18.1653 17.3559C18.2755 16.9821 18.3551 16.5166 18.3551 15.9518V15.8472C18.3551 14.9247 18.3551 14.504 17.7031 14.1314C17.428 13.9751 17.2227 13.881 17.0582 13.8064C16.691 13.6394 16.4479 13.5297 16.1198 13.0499C16.0807 12.9928 16.0425 12.9358 16.0043 12.8777ZM12 3.83333C9.68259 3.83333 7.59062 4.79858 6.1042 6.34896C6.28116 6.47186 6.43537 6.64453 6.54129 6.88256C6.74529 7.34029 6.74529 7.8112 6.74529 8.22764C6.74488 8.55621 6.74442 8.8672 6.84992 9.09302C6.99443 9.40134 7.6164 9.53227 8.16548 9.64736C8.36166 9.68867 8.56395 9.73083 8.74797 9.78176C9.25405 9.92233 9.64554 10.3765 9.95938 10.7412C10.0896 10.8931 10.2819 11.1163 10.3783 11.1717C10.4286 11.1356 10.59 10.9608 10.6699 10.6735C10.7307 10.4547 10.7134 10.2597 10.6239 10.1543C10.0648 9.49445 10.0952 8.2232 10.268 7.75495C10.5402 7.01606 11.3905 7.07058 12.012 7.11097C12.2438 7.12589 12.4626 7.14023 12.6257 7.11976C13.2482 7.04166 13.4396 6.09538 13.575 5.91C13.8671 5.50981 14.7607 4.9071 15.3158 4.53454C14.3025 4.08382 13.1805 3.83333 12 3.83333Z"/></svg>
+      <div class="n">Publicワールド</div><div class="v">OK</div>
+    </div>
+    <div class="cell">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40" aria-hidden="true"><path d="M20.5021 5.92225 12 1 3.49793 5.92225 12 10.8445 20.5021 5.92225ZM2.5 7.6555V17.5L11 22.4211V12.5765L2.5 7.6555ZM13 22.4211 21.5 17.5V7.6555L13 12.5765V22.4211Z"/></svg>
+      <div class="n">作品に組み込んで販売</div><div class="v">OK</div>
+    </div>
+    <div class="cell cond">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40" aria-hidden="true"><path d="M12 10C14.2091 10 16 8.20914 16 6 16 3.79086 14.2091 2 12 2 9.79086 2 8 3.79086 8 6 8 8.20914 9.79086 10 12 10ZM5.5 13C6.88071 13 8 11.8807 8 10.5 8 9.11929 6.88071 8 5.5 8 4.11929 8 3 9.11929 3 10.5 3 11.8807 4.11929 13 5.5 13ZM21 10.5C21 11.8807 19.8807 13 18.5 13 17.1193 13 16 11.8807 16 10.5 16 9.11929 17.1193 8 18.5 8 19.8807 8 21 9.11929 21 10.5ZM12 11C14.7614 11 17 13.2386 17 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5 15.9999C5 15.307 5.10067 14.6376 5.28818 14.0056L5.11864 14.0204C3.36503 14.2104 2 15.6958 2 17.4999V21.9999H5V15.9999ZM22 21.9999V17.4999C22 15.6378 20.5459 14.1153 18.7118 14.0056 18.8993 14.6376 19 15.307 19 15.9999V21.9999H22Z"/></svg>
+      <div class="n">共同制作・外注に渡す</div><div class="vs">条件つき</div>
+      <div class="s">相手が買う必要はありません</div>
+    </div>
+
+    <div class="cell no">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40" aria-hidden="true"><path d="M11 2.53513C10.4117 2.19479 9.72857 2 9 2 6.79086 2 5 3.79086 5 6V7.77422C4.14895 8.11644 3.45143 8.64785 2.94126 9.34933 2.29239 10.2415 2 11.3347 2 12.5 2 14.0614 2.79529 15.4356 4 16.242V17.5C4 19.9853 6.01472 22 8.5 22 9.42507 22 10.285 21.7209 11 21.2422V17.5C11 16.167 10.67 15.3147 10.1402 14.7408 9.59743 14.1528 8.71622 13.7165 7.3356 13.4864L7.6644 11.5136C8.96602 11.7305 10.1058 12.1373 11 12.8271V2.53513ZM13 2.53513V12.8271C13.8942 12.1373 15.034 11.7305 16.3356 11.5136L16.6644 13.4864C15.2838 13.7165 14.4026 14.1528 13.8598 14.7408 13.33 15.3147 13 16.167 13 17.5V21.2422C13.715 21.7209 14.5749 22 15.5 22 17.9853 22 20 19.9853 20 17.5V16.242C21.2047 15.4356 22 14.0614 22 12.5 22 11.3347 21.7076 10.2415 21.0587 9.34933 20.5486 8.64785 19.8511 8.11644 19 7.77422V6C19 3.79086 17.2091 2 15 2 14.2714 2 13.5883 2.19479 13 2.53513Z"/></svg>
+      <div class="n">AI学習に使う</div><div class="v">NG</div>
+    </div>
+    <div class="cell">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40" aria-hidden="true"><path d="M1.51587 7.87678C1.67997 9.82977 3.0892 11.452 5.00006 11.8875V19.0013H3.00006V21.0013H21.0001V19.0013H19.0001V11.8875C20.9109 11.452 22.3202 9.82977 22.4842 7.87678C21.9938 7.95878 21.4973 8 21.0001 8C17.186 8 13.7861 5.59592 12.5148 2H11.4853C10.214 5.59592 6.81411 8 3.00006 8C2.50278 8 2.00635 7.95878 1.51587 7.87678ZM17.0001 19.0013H7.00006V12H17.0001V19.0013Z"/></svg>
+      <div class="n">宗教利用</div><div class="v">OK</div>
+      <div class="s"><a href="#religious">※くわしくは下</a></div>
+    </div>
+    <div class="cell link">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="34" height="34" aria-hidden="true"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"/></svg>
+      <div class="t"><a href="#terms">このほかの条件は<br>規約の本文へ</a></div>
+    </div>
+  </div>
+
+  <h2 class="sec" id="religious">宗教利用について</h2>
+
+  <div class="rel">
+    <div class="ok">
+      <div class="chip">OK</div>
+      <div class="cols">
+        <div>
+          <div class="li">法要・儀礼・礼拝</div>
+          <div class="li">法話・講義</div>
+          <div class="li">宗教教育、文化の紹介</div>
+          <div class="li">研究、歴史・文化の展示</div>
+        </div>
+        <div>
+          <div class="li">お寺や仏間を再現したワールド</div>
+          <div class="li">宗教を題材にした映像・ゲーム</div>
+          <div class="li">お寺や僧侶ご本人のお仕事</div>
+        </div>
+      </div>
+      <div class="tail">宗派は問いません。お寺の関係者でなくても使えます。</div>
+    </div>
+
+    <div class="ng">
+      <div class="chip">NG</div>
+      <div style="margin-top:14px;">
+        <div class="li">作者・ショップ・お寺・宗派・実在の僧侶の公認や監修をよそおうこと</div>
+        <div class="li">僧侶の資格、お寺や宗派への所属をいつわること</div>
+        <div class="li">おどしやだましによる勧誘、むりやりの入信のすすめ</div>
+        <div class="li">不当な寄附・献金集め、だましや違法な資金集め</div>
+      </div>
+      <div class="tail">ふつうの布教や行事の案内まで止めるものではありません。</div>
+    </div>
+
+    <div class="disc">
+      このモデルは<strong>特定の宗派・お寺とは関係がありません。</strong><br>
+      商品説明に宗派の名前が出てくる場合は、その宗派でよく見られる形を参考にして作った、という意味です。
+    </div>
+  </div>
+
+  <h2 class="sec" id="terms">利用規約（本文）</h2>
+
+  <div class="art">
+    <h3>第1条（適用範囲）</h3>
+    <ol>
+      <li>本規約は、ローポリで頑張るくん（以下「権利者」）が配布する「サンプル商品」（以下「本データ」）の利用条件を定めます。</li>
+      <li>本データに含まれるもの：3Dモデル（FBX・GLB・UnityPackage）、テクスチャ（PNG）</li>
+      <li>本データを入手または利用した方（以下「利用者」）は、本規約に同意したものとみなします。</li>
+      <li>同一の商品として配布される無料版・有料版・支援版には、本規約が同一に適用されます。</li>
+      <li>本データに権利者以外が権利を持つ素材（以下「第三者素材」）が含まれる場合、当該素材には、その素材固有のライセンスが優先して適用されます。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第2条（用語）</h3>
+    <ol>
+      <li><strong>元データ</strong>　本データに含まれるファイルそのもの。</li>
+      <li><strong>改変データ</strong>　元データに変更を加えたもの。</li>
+      <li><strong>素材</strong>　元データまたは改変データの一部（パーツ・テクスチャ・音声・スクリプト等）。</li>
+      <li><strong>完成作品</strong>　World・ゲーム・アプリケーション・映像作品その他のデジタル作品で、本データが構成要素として組み込まれたもの。</li>
+      <li><strong>意図的な提供</strong>　利用者が元データ・改変データ・素材を第三者が取得できる状態に置く行為で、次を含みます。
+        <ol>
+          <li>完成作品に元データ・改変データ・素材を同梱して配布すること</li>
+          <li>第三者が取得できる場所に置くこと</li>
+          <li>素材単体で配布すること</li>
+          <li>ダウンロードできる場所に置くこと</li>
+        </ol>
+      </li>
+      <li>公開先サービスの技術仕様により、第三者が完成作品を解析してデータを取り出せる可能性があることは、前項の意図的な提供には含みません。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第3条（許可する利用）</h3>
+    <ol>
+      <li><strong>改変</strong>　モデル・テクスチャ・マテリアルの変更、サイズ変更、ポリゴン削減・最適化、ファイル形式の変換を行えます。</li>
+      <li><strong>パーツ単位利用</strong>　本データの一部のみを、利用者自身のWorld・ゲーム・映像その他の完成作品、および他のモデル・アセットとの組み合わせに使用できます。パーツの改変も前項の範囲で行えます。</li>
+      <li><strong>完成作品への組込み</strong>　完成作品に組み込んで公開・配布できます。完成作品の無料配布と有料販売のいずれも行えます。</li>
+      <li><strong>VRChat</strong>　Private World、Public World、Community Labs等への公開、商用Worldでの使用を行えます。</li>
+      <li><strong>VRChat以外のVR・メタバースサービス</strong>　使用できます。ただし権利者は、VRChat以外のサービスでの動作を保証しません。</li>
+      <li><strong>商用利用</strong>　個人による収益化、有料World、ゲーム・アプリの販売、World制作の受託、一般的な広告・プロモーションでの使用を行えます。</li>
+      <li><strong>動画・配信・SNS</strong>　動画・ライブ配信（収益化・広告収益を伴うものを含みます）、SNS投稿、スクリーンショットの投稿、商品・World・ゲーム・イベントの宣伝に使用できます。</li>
+      <li><strong>法人利用</strong>　法人も前各項の範囲で利用できます。</li>
+      <li><strong>クレジット表記</strong>　不要です。表記いただける場合は「ローポリで頑張るくん」をご使用ください。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第4条（禁止する利用）</h3>
+    <p>第5条に定める場合を除き、次の行為はできません。</p>
+    <ol>
+      <li>元データの再配布・再販売</li>
+      <li>改変データの再配布・再販売</li>
+      <li>素材単体の配布・販売（素材集としての配布・販売を含みます）</li>
+      <li>前3号のほか、第2条第5項の意図的な提供に該当する行為</li>
+      <li>他の方が同一の商品を購入していることのみを理由として、元データ・改変データ・素材を送受信すること</li>
+      <li>本データを利用者自身が制作したものとして表示すること</li>
+      <li>第三者の権利を侵害する目的での利用</li>
+      <li>法令に違反する利用</li>
+      <li>公開先プラットフォームの規約に違反する利用</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第5条（共同制作・外部委託）</h3>
+    <ol>
+      <li>利用者は、利用者自身の案件の制作・改変・納品に必要な範囲で、共同制作者および制作代行者（以下「共有先」）に元データ・改変データ・素材を共有できます。共有先が本データを別途購入する必要はありません。</li>
+      <li>共有先による本データの使用は、当該案件の作業に必要な範囲に限ります。次の使用は認められません。
+        <ol>
+          <li>当該案件以外での利用</li>
+          <li>個人的な再利用</li>
+          <li>再配布・再販売</li>
+          <li>別案件への流用</li>
+          <li>当該案件の作業終了後に、当該案件と独立して再利用すること</li>
+        </ol>
+      </li>
+      <li>利用者は、共有を行う場合、次の措置をとってください。
+        <ol>
+          <li>共有先に対し、本データを当該案件の作業に必要な範囲でのみ使用できること、および前項各号が認められないことを伝えること</li>
+          <li>共有先が当該案件以外で本データを利用しないよう管理すること</li>
+          <li>共有先が本データを独立して再利用し、再配布し、再販売し、または別案件へ流用しないよう管理すること</li>
+        </ol>
+      </li>
+      <li>本条の共有によって、共有先が本規約の当事者となるものではありません。共有先による使用について、本規約に基づく義務は利用者が負います。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第6条（センシティブ表現）</h3>
+    <ol>
+      <li>暴力表現、ホラー、怪異、葬儀、時代劇その他の表現を含む作品に使用できます。</li>
+      <li>成人向け・性的表現を含む作品に使用できます。この場合、公開先のサービスに年齢制限・センシティブ表示・コンテンツ区分の仕組みがあるときは、その仕組みに従って公開してください。</li>
+      <li>前2項は、第4条第8号および第9号の禁止を緩めるものではありません。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第7条（政治的な主題）</h3>
+    <ol>
+      <li>政治的な主題を扱う作品への使用を一律には禁止しません。</li>
+      <li>実際にその事実がない場合、権利者、ローポリで頑張るくんその他の関係者（権利者に関係する寺院・宗派を含みます）が、特定の政治的立場・政党・候補者・政治運動を公認・支持・推奨し、またはこれらと提携していると誤認させる利用はできません。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第8条（AI利用）</h3>
+    <ol>
+      <li>次の利用はできません。
+        <ol>
+          <li>本データを機械学習の学習データとして使用すること</li>
+          <li>本データを用いた追加学習・ファインチューニング</li>
+          <li>LoRAその他の追加学習用データの素材として使用すること</li>
+          <li>本データを学習させた学習済みモデル・LoRA・チェックポイント等を配布・販売すること</li>
+        </ol>
+      </li>
+      <li>利用者が制作補助・技術相談・解析のために、本データまたはその画像を生成AIに入力することはできます。</li>
+      <li>前項は、本データの代替物を生成して再配布・再販売する権利を与えるものではありません。この場合も第4条が適用されます。</li>
+      <li>第1項は、利用者自身が本データを学習させる行為を禁止するものです。生成AIサービスの仕様により入力内容が当該サービスの学習に利用される場合は、第1項の違反とはしません。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第9条（NFT・ブロックチェーン）</h3>
+    <ol>
+      <li>本データおよびその構成データを、NFTその他のトークンとして発行し、または売買することはできません。</li>
+      <li>ブロックチェーン技術を使用しているサービスであることのみを理由として、当該サービス上での通常の利用を禁止しません。この場合、第3条第5項が適用されます。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第10条（著作権）</h3>
+    <ol>
+      <li>本データの著作権その他の権利は権利者に帰属します。本規約による許諾は、これらの権利を利用者に移転するものではありません。</li>
+      <li>第三者素材については第1条第5項のとおりです。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第11条（動作環境・サポート）</h3>
+    <ol>
+      <li>権利者が動作を確認した環境は次のとおりです。Unity 2022.3.22f1（Built-in Render Pipeline）</li>
+      <li>権利者は、記載のない環境での動作を保証しません。</li>
+      <li>権利者は、改変後の動作、および将来のUnity・VRChatその他のソフトウェアの更新後の動作を保証しません。</li>
+      <li>権利者は個人で制作・配布しているため、個別のサポートは行いません。導入方法・ソフトウェアの使用方法・制作方法に関する個別の対応はできません。</li>
+      <li>ダウンロード商品は、BOOTHの規定によりキャンセル・返金ができません。</li>
+      <li>不具合が判明した場合、権利者は修正版として商品を更新することがあります。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第12条（免責）</h3>
+    <ol>
+      <li>権利者は、本データの利用により利用者に生じた損害について責任を負いません。</li>
+      <li>前項は、権利者の故意または重大な過失による損害、および法令により責任の免除が認められない場合には適用されません。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第13条（規約に違反した場合）</h3>
+    <ol>
+      <li>利用者が本規約に違反した場合、権利者は本データの利用の許諾を終了することができます。</li>
+      <li>許諾が終了した場合、利用者は本データの利用をやめ、手元の元データ・改変データ・素材を削除してください。</li>
+      <li>許諾が終了しても、終了前に本規約に従って公開した完成作品は、引き続き公開できます。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第14条（規約の変更）</h3>
+    <ol>
+      <li>権利者は本規約を変更することがあります。</li>
+      <li>変更する場合、権利者は本規約を掲載しているページで告知します。<span class="req">［要記入：URL］</span></li>
+      <li>本データの利用には、利用者が本データを入手した時点の本規約が適用されます。変更後の本規約が、変更前に入手した本データの利用に適用されることはありません。</li>
+      <li>規約Versionは商品Versionとは別に管理します。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第15条（準拠法・お問い合わせ）</h3>
+    <ol>
+      <li>本規約は日本法に従って解釈されます。</li>
+      <li>本規約についてのお問い合わせは、BOOTHのメッセージ機能をご利用ください。</li>
+    </ol>
+  </div>
+
+  <div class="art">
+    <h3>第16条（本規約の確認方法と要約表示）</h3>
+    <ol>
+      <li>本規約の全文は、商品に同梱されるほか、購入前にも次の場所で確認できます。<span class="req">［要記入：URL］</span></li>
+      <li>BOOTH商品ページに掲載される要約表示は、本規約の要点をまとめたものです。要約表示と本規約の内容が異なる場合、本規約が優先します。</li>
+    </ol>
+  </div>
+
+  <footer>
+    このページの上部にある一覧と宗教利用の説明は、規約の要点をまとめたものです。内容が食いちがう場合は本文が優先されます。<br>
+    <a href="../">規約の一覧へ</a>
+  </footer>
+
+</div>
+</body>
+</html>
