@@ -6,7 +6,7 @@
 <title>利用規約｜ローポリで頑張るくん</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap">
 <style>
-:root { --ink:#111110; --sub:#55554E; --rule:#C9C6BE; --paper:#FFFFFF; }
+:root { --ink:#1C1B19; --sub:#6B6862; --rule:#DAD5CA; --paper:#FAF8F3; --accent:#A8432F; }
 * { box-sizing: border-box; }
 body { margin:0; background:var(--paper); color:var(--ink);
   font-family:'BIZ UDPGothic','Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;
@@ -14,14 +14,15 @@ body { margin:0; background:var(--paper); color:var(--ink);
 .wrap { max-width:720px; margin:0 auto; padding:56px 20px 80px; }
 h1 { font-size:26px; line-height:1.4; margin:0 0 10px; }
 .sub { font-size:12px; letter-spacing:.14em; color:var(--sub); margin-bottom:8px; }
-.rule { border:0; border-top:3px solid var(--ink); margin:18px 0 32px; }
+.rule { border:0; border-top:3px solid var(--ink); margin:18px 0 32px; position:relative; }
+.rule::after { content:''; position:absolute; left:0; top:-3px; width:84px; height:3px; background:var(--accent); }
 h2 { font-size:17px; margin:40px 0 12px; }
 p { font-size:15px; margin:0 0 14px; }
 ul.items { list-style:none; margin:0; padding:0; }
 ul.items li { border-bottom:1px solid var(--rule); }
 ul.items li:first-child { border-top:1px solid var(--rule); }
 ul.items a { display:block; padding:16px 2px; text-decoration:none; color:var(--ink); }
-ul.items a:hover { background:#F4F2EC; }
+ul.items a:hover { background:#F2EEE4; }
 .nm { font-size:16px; font-weight:700; }
 .meta { font-size:12px; color:var(--sub); margin-top:3px; }
 .note { font-size:13px; color:var(--sub); border:1px solid var(--rule); padding:16px 18px; }
